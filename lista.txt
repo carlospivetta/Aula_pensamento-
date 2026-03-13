@@ -1,1 +1,7 @@
+Identificar - problema da internet nas aulas esta muito lenta
 
+Analisar - computador com virus, verificar qem qual parte das salas de aulas a internet ta pior, verificar os roteadotres
+
+Soluções - Formatar computador caso seja virus / medir o sinal dentro da sala, depois descobrir qual seria o problema, o colocar repetidores dentro da sala e analisar se ira melhor / caso seja os roteadores verificar qual seria o roteador especifico e ligar para a empresa responsavel 
+
+Implementar solução - 
