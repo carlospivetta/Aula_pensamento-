@@ -1,0 +1,59 @@
+O sistema deve simular deve abrir um portao automatico com dois lados(esquerdo e direito), usando botoes e leds para indicar o estado com que eles se movam
+- controlar os dois lado dos portoes (esquerdo e direito)
+- ter 4 botoes 
+- botao 1: abre lado esquerdo
+-botao 2: abre lado direito
+-botao 3: abre os dois lados
+-botao 4: fecha completamente os portoes 
+ira ser usado 6 leds
+-Esquerdo: vermelho (fechado) verde (aberto)
+-Direito: vermelho (fechado) verde (aberto)
+-Amarelo - portao em movimento
+-Azul - portao totalmente aberto
+
+LISTAS DE PASSOS:
+1.iniciar os sistema com os dois lados fechados
+2.Acender leds vermelhos dos dois lados
+3.Ler qual botao foi precionado
+4. botao 1 = abrir lado esquerdo
+botao 2 = abrir lado direito
+botao 3 = abrir os dois lados
+botao 4 = fechar os dois lados
+5. ligar led amarelo durante movimento
+6. led verde = aberto
+7. vermelho = fechado
+9. se os dois tiverem aberto ligar led azul
+10. assim pode repetir o processo.
+
+ PSEUDOCODIGO SIMPLES:
+ inicio
+ configurar pinos:
+   definir pinos dos leds como saida
+   definir pinos dos leds dos botoes como entrada
+   definir servo esquerdo
+   definir servo direito
+lop inifinito:
+  ler botao1
+  ler botao2
+  ler botao3
+  ler botao4
+se botao1 pressionado:
+ apagar led vermelho
+ ligar led verde
+ ligar led verde (direita)
+mover portao para aberto
+esperar 1 segundo
+finalizar abertura
+desligar led amarelo
+se botao 2 pressionado
+apagar led vermelho
+ligar led verde
+ligar led amarelo
+mover portao para aberto
+aguarda 1 segundo
+finalizar abertura
+ligar led azul
+desligar led amarelo 
+se botao 3 pressionado
+ligar led amarelo
+
