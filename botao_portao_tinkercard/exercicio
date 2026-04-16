@@ -37,6 +37,7 @@ lop inifinito:
   ler botao2
   ler botao3
   ler botao4
+
 se botao1 pressionado:
  apagar led vermelho
  ligar led verde
@@ -45,6 +46,7 @@ mover portao para aberto
 esperar 1 segundo
 finalizar abertura
 desligar led amarelo
+
 se botao 2 pressionado
 apagar led vermelho
 ligar led verde
@@ -54,6 +56,24 @@ aguarda 1 segundo
 finalizar abertura
 ligar led azul
 desligar led amarelo 
+
 se botao 3 pressionado
 ligar led amarelo
+mover serco esquerdo para aberto
+mover servo direito para aberto
+ligar os leds dos dois lados
+desligar leds vermelhos
+
+se botao 4 pressionado
+desligar led azul
+mover os servos (esquerdo e direito) para fechado
+ligar leds vermelhos
+desligar leds verde
+desligar led azul
+
+
+
+
+
+
 
