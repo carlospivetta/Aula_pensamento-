@@ -1,3 +1,4 @@
+
 O sistema deve simular deve abrir um portao automatico com dois lados(esquerdo e direito), usando botoes e leds para indicar o estado com que eles se movam
 - controlar os dois lado dos portoes (esquerdo e direito)
 - ter 4 botoes 
@@ -70,6 +71,10 @@ mover os servos (esquerdo e direito) para fechado
 ligar leds vermelhos
 desligar leds verde
 desligar led azul
+
+assim faz o loop infinito.
+
+
 
 
 
