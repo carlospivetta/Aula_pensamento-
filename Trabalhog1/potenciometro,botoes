@@ -1,0 +1,55 @@
+Entradas
+Botão → inicia o processo
+Potenciômetro A0 → define o tempo (1 a 10 s)
+Potenciômetro A1 → define a intensidade
+
+saidas
+LED vermelho → sistema parado
+LED amarelo → processo em execução
+LED verde → processo finalizado
+LEDs 2, 3, 4 → intensidade (1, 2 ou 3 LEDs acesos)
+
+componetes utilzados
+6 leds
+LED vermelho = indica que o sistema está parado e aguardando início.
+LED amarelo = indica que o processo está em execução.
+LED verde = indica que o processo foi finalizado.
+LEDs de intensidade (3 LEDs)  mostram o nível de intensidade:
+1 LED aceso = intensidade baixa
+2 LEDs acesos = intensidade média
+3 LEDs acesos = intensidade alta
+
+1 botao - usado para iniciar o processo quando pressionado.
+2 potenciometro - (1- define o tempo de funcionamento do processo (de 1 a 10 segundos).)
+(2- define a intensidade do processo.
+
+regras de funcionamento:
+O sistema inicia sempre parado, com o LED vermelho aceso.
+Se o botão for pressionado, o sistema inicia um novo ciclo de funcionamento.
+No início do ciclo, o sistema lê o potenciômetro A0 e define o tempo de execução entre 1 e 10 segundos.
+Também no início do ciclo, o sistema lê o potenciômetro A1 e define a intensidade do processo:
+valor baixo → 1 LED aceso (baixa intensidade)
+valor médio → 2 LEDs acesos (média intensidade)
+valor alto → 3 LEDs acesos (alta intensidade)
+Durante a execução do processo:
+o LED amarelo permanece aceso
+os LEDs de intensidade permanecem fixos
+alterações nos potenciômetros não afetam o ciclo atual.
+Quando o tempo definido terminar:
+o LED amarelo apaga
+o LED verde acende
+o processo é encerrado automaticamente
+Após a finalização
+o sistema retorna ao estado inicial
+o LED vermelho volta a acender
+o sistema aguarda novo acionamento do botão
+
+logica IF:
+if (botão pressionado) = inicia processo
+if (A1 < 341) = intensidade baixa
+elif (A1 < 682) = intensidade média
+else  intensidade alta
+if (tempo acabou) = finaliza processo
+
+
+
