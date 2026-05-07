@@ -28,9 +28,9 @@ O sistema inicia sempre parado, com o LED vermelho aceso.
 Se o botão for pressionado, o sistema inicia um novo ciclo de funcionamento.
 No início do ciclo, o sistema lê o potenciômetro A0 e define o tempo de execução entre 1 e 10 segundos.
 Também no início do ciclo, o sistema lê o potenciômetro A1 e define a intensidade do processo:
-valor baixo → 1 LED aceso (baixa intensidade)
-valor médio → 2 LEDs acesos (média intensidade)
-valor alto → 3 LEDs acesos (alta intensidade)
+valor baixo = 1 LED aceso (baixa intensidade)
+valor médio = 2 LEDs acesos (média intensidade)
+valor alto = 3 LEDs acesos (alta intensidade)
 Durante a execução do processo:
 o LED amarelo permanece aceso
 os LEDs de intensidade permanecem fixos
