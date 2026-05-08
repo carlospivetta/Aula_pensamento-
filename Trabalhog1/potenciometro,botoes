@@ -45,11 +45,24 @@ o LED vermelho volta a acender
 o sistema aguarda novo acionamento do botão
 
 logica IF:
-if (botão pressionado) = inicia processo
-if (A1 < 341) = intensidade baixa
-elif (A1 < 682) = intensidade média
-else  intensidade alta
-if (tempo acabou) = finaliza processo
+If o botão for igual a 1, o sistema começa a funcionar
+ Else, todos os LEDs permanecem apagados
+ If o sistema estiver funcionando
+     o potenciômetro A0 define o tempo
+     o potenciômetro A1 define a intensidade
+     o LED amarelo acende
+ If a intensidade for menor ou igual a 341
+     apenas o LED do pino 8 acende
+Elif a intensidade for menor ou igual a 682
+     os LEDs dos pinos 8 e 9 acendem
+Else:
+     os LEDs dos pinos 8, 9 e 10 acendem
+ If o tempo for maior que 1000
+     o LED amarelo apaga
+     o LED verde acende
+    os LEDs de intensidade apagam
+     o sistema espera 1 segundo
+     depois o LED verde apaga e o vermelho acende
 
 
 
